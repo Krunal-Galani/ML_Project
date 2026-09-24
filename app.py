@@ -234,20 +234,24 @@ footer                  { display: none !important; }
 
 /* ─── Number inputs ─── */
 [data-testid="stNumberInput"] > div,
+[data-testid="stNumberInputContainer"],
 div[data-baseweb="input"],
 div[data-baseweb="base-input"] {
+    background-color: #f8fafc !important;
     background: #f8fafc !important;
     border: 1.5px solid #cbd5e1 !important;
     border-radius: 10px !important;
     transition: border-color 0.15s, box-shadow 0.15s !important;
 }
 [data-testid="stNumberInput"] > div:focus-within,
+[data-testid="stNumberInputContainer"]:focus-within,
 div[data-baseweb="input"]:focus-within {
     border-color: #2563eb !important;
     box-shadow: 0 0 0 3px rgba(37,99,235,0.12) !important;
 }
 [data-testid="stNumberInput"] input,
 input[type="number"] {
+    background-color: transparent !important;
     background: transparent !important;
     border: none !important;
     color: #0f172a !important;
@@ -255,12 +259,16 @@ input[type="number"] {
     font-weight: 500 !important;
 }
 [data-testid="stNumberInput"] button {
+    background-color: #eff6ff !important;
     background: #eff6ff !important;
     border: 1px solid #bfdbfe !important;
     color: #1d4ed8 !important;
     border-radius: 6px !important;
 }
-[data-testid="stNumberInput"] button:hover { background: #dbeafe !important; }
+[data-testid="stNumberInput"] button:hover { 
+    background-color: #dbeafe !important;
+    background: #dbeafe !important; 
+}
 
 /* ─── Select dropdowns ─── */
 [data-testid="stSelectbox"] > div > div,
